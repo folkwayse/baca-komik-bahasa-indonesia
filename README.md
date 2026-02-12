@@ -2,6 +2,8 @@
 
 Platform baca manga online dengan pengalaman membaca yang nyaman.
 
+**Homepage:** https://komikindo-eight.vercel.app/
+
 ## Latar Belakang
 
 Proyek ini dibuat karena saya suka baca komik, tapi tidak menemukan platform dengan alur baca yang nyaman. Sebagian besar situs baca komik memiliki:
