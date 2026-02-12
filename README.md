@@ -1,60 +1,87 @@
-# Nuxt Starter Template
+# KomikIndo
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+Platform baca manga online dengan pengalaman membaca yang nyaman.
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+## Latar Belakang
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+Proyek ini dibuat karena saya suka baca komik, tapi tidak menemukan platform dengan alur baca yang nyaman. Sebagian besar situs baca komik memiliki:
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-  </picture>
-</a>
+- Tampilan yang berantakan dan penuh iklan
+- Navigasi yang membingungkan antar chapter
+- Tidak ada fitur untuk melacak progres bacaan
+- Pengalaman mobile yang kurang optimal
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+KomikIndo hadir sebagai solusi dengan fokus pada **pengalaman membaca yang nyaman**.
 
-## Quick Start
+## Fitur Utama
 
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/starter
-```
+- Baca manga dengan tampilan yang bersih dan modern
+- Dark mode untuk kenyamanan mata
+- Bookmark manga favorit
+- Riwayat baca otomatis tersimpan
+- Navigasi mudah antar chapter
+- Responsive design untuk desktop dan mobile
+- Pencarian manga cepat
 
-## Deploy your own
+## Tech Stack
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
+- [Nuxt 4](https://nuxt.com/) - Vue.js Framework
+- [Vue 3](https://vuejs.org/) - Frontend Framework
+- [TypeScript](https://www.typescriptlang.org/) - Type Safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Pinia](https://pinia.vuejs.org/) - State Management
+- [VueUse](https://vueuse.org/) - Vue Composables
 
-## Setup
+## Memulai
 
-Make sure to install the dependencies:
+### Prasyarat
+
+- Node.js 18+
+- pnpm 10.28.2
+
+### Instalasi
 
 ```bash
+# Install dependencies
 pnpm install
-```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
+# Jalankan development server
 pnpm dev
+
+# Buka http://localhost:3000
 ```
 
-## Production
-
-Build the application for production:
+### Perintah Lainnya
 
 ```bash
+# Build untuk production
 pnpm build
-```
 
-Locally preview production build:
-
-```bash
+# Preview production build
 pnpm preview
+
+# Jalankan ESLint
+pnpm lint
+
+# TypeScript type checking
+pnpm typecheck
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Struktur Proyek
+
+```
+app/
+├── components/     # Komponen Vue (auto-imported)
+├── composables/    # Composables (auto-imported)
+├── pages/          # File-based routing
+├── stores/         # Pinia stores
+├── assets/         # CSS dan assets
+└── app.vue         # Root component
+
+server/
+└── api/            # Server API routes
+```
+
+## License
+
+MIT
